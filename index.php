@@ -11,6 +11,6 @@ global $Core;
 $Core = new Init($Config);
 $Core->Run();
 
-echo "Hello, git! via NetBeans.";
+echo "Hello, git! via NetBeans. kxexkxe";
 #xdebug_stop_trace();
 ?>
