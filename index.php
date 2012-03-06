@@ -12,4 +12,6 @@ $Core = new Init($Config);
 $Core->Run();
 
 #xdebug_stop_trace();
+
+echo "Second request.";
 ?>
