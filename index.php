@@ -10,5 +10,7 @@ global $Core;
 
 $Core = new Init($Config);
 $Core->Run();
+
+echo "Hello, git!";
 #xdebug_stop_trace();
 ?>
