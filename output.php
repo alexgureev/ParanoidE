@@ -104,8 +104,9 @@ class Output extends Input
 
     protected function Constructor()
     {
-        $this->InsertCSS('http://fw.static.s3.amazonaws.com/css/bootstrap.min.css');
-        $this->InsertCSS('http://fw.static.s3.amazonaws.com/css/bootstrap-responsive.min.css');
+        $this->InsertCSS('/css/bootstrap.min.css');
+        $this->InsertCSS('/css/bootstrap-responsive.min.css');
+        $this->InsertCSS('/css/font-awesome.css');
         $this->Template = $this->LoadTemplate('main.html');
     }
 
