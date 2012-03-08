@@ -43,7 +43,7 @@ class Output extends Input
 
     protected function SaveLog()
     {
-        $this->db->i('logs')->v('NULL, ?, CURRENT_TIMESTAMP, ?, ?')->e(print_r($this->Log, 1), round($this->getMicrotime() - $this->Config['start_time'], 4), 'http://'.$this->_SERVER['HTTP_HOST'].$this->_SERVER['PHP_SELF'].'?'.$this->_SERVER['QUERY_STRING']);
+        $this->db->i('logs')->v('NULL, ?, CURRENT_TIMESTAMP, ?, ?')->e(json_encode($this->Log), round($this->getMicrotime() - $this->Config['start_time'], 4), 'http://'.$this->_SERVER['HTTP_HOST'].$this->_SERVER['PHP_SELF'].'?'.$this->_SERVER['QUERY_STRING']);
     }
 
     protected function LoadTemplate($Name)
