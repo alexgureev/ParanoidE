@@ -7,11 +7,11 @@ class DB
         'db_user' => 'paranoide',
         'db_pass' => 'ROiYG0w5HaAZwONdHopB',
         'db_host' => 'localhost',
-        'db_base' => 'paranoide_db',
+        'db_base' => 'paranoide_framework',
         'db_char' => 'utf8',
         'db_port' => '3306',
         'db_drvr' => 'mysql');
-    
+
     protected $link;
     protected $stmt;
     protected $query;
