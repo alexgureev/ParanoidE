@@ -106,7 +106,7 @@ class Output extends Input
     {
         $this->InsertCSS('/css/bootstrap.min.css');
         $this->InsertCSS('/css/bootstrap-responsive.min.css');
-        $this->InsertCSS('/css/font-awesome.css');
+        //$this->InsertCSS('/css/font-awesome.css');
         $this->Template = $this->LoadTemplate('main.html');
     }
 
@@ -126,7 +126,7 @@ class Output extends Input
 
     protected function LoadComponent($Name)
     {
-
+fkk
         $Component = $this->LoadTemplate($Name);
         $this->Template = str_replace('{{{'.$Name.'}}}', $Component[0]['body'], $this->Template);
 
