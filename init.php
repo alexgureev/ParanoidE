@@ -101,6 +101,16 @@ class Init extends Output
         }
 
         $this->SaveLog();
+/*
+        $bcrypt = new Bcrypt(5);
+
+        $hash = $bcrypt->hash('password');
+        $isGood = $bcrypt->verify('password', $hash);
+
+        print_r($hash);
+        print_r($isGood);
+*/
+        echo 123;
     }
 
     public function Run()
