@@ -126,7 +126,6 @@ class Output extends Input
 
     protected function LoadComponent($Name)
     {
-fkk
         $Component = $this->LoadTemplate($Name);
         $this->Template = str_replace('{{{'.$Name.'}}}', $Component[0]['body'], $this->Template);
 
